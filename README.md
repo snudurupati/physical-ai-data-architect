@@ -1,4 +1,4 @@
-# physicalAI-data-architect
+# physical-ai-data-architect
 
 An open-source data engine for robot learning. Built in public by a data engineer learning robotics, one week at a time.
 
