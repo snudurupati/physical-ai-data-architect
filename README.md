@@ -27,7 +27,8 @@ So this repo is about the footage. Specifically:
 
 | Piece | What I'm using |
 |---|---|
-| Robot arm | Yantra, an SO-101 leader + follower kit (~$300) |
+| Robot arm | Yantra, a Seeed SO-ARM101 Pro leader + follower, pre-assembled ($399) |
+| Camera | UGREEN 2K webcam on an 11" magic arm, recording at 640x480, 30fps |
 | Simulation | MuJoCo (gym-pusht, gym-aloha) on a MacBook Pro M5 Pro |
 | Onboard compute | Raspberry Pi 5, 16GB |
 | Data | LeRobot Hub, Open X-Embodiment, DROID |

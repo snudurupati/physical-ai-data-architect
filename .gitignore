@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Data and models (too big for git)
+data/
+outputs/
+checkpoints/
+wandb/
+*.mp4
+*.mcap
+*.safetensors
+
+# OS
+.DS_Store
