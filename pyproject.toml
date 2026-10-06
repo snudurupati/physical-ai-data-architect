@@ -3,5 +3,5 @@ name = "physical-ai-data-architect"
 version = "0.1.0"
 requires-python = ">=3.11"
 dependencies = [
-    "lerobot>=0.4.4",
+    "lerobot[feetech]==0.4.4",
 ]
