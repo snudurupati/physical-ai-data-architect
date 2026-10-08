@@ -5,3 +5,6 @@ requires-python = ">=3.11"
 dependencies = [
     "lerobot[feetech]==0.4.4",
 ]
+
+[tool.uv]
+override-dependencies = ["torchcodec; sys_platform == 'never'"]
