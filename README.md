@@ -49,6 +49,10 @@ Day 1. Nothing built yet. The plan runs from October to December 2026, and every
 | 10 to 11 | Scale up, run the policy on the Pi 5 |
 | 12 to 13 | An LLM planner on top, then a v0.1 release |
 
+Each week has its own folder under [weeks/](weeks/), with a setup prompt and the code from that week's video.
+
+- [Week 1: Modern Robotics is a Data Engineering Problem](weeks/week-01/)
+
 ## What this is not
 
 I am not a roboticist. I don't have a robotics degree, and I have never shipped a robot to production. This is not a framework for training policies, and it won't compete with what the big labs have built internally.
