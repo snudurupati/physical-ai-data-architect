@@ -8,3 +8,10 @@ dependencies = [
 
 [tool.uv]
 override-dependencies = ["torchcodec; sys_platform == 'never'"]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+    "matplotlib>=3.11.2",
+    "pyspark>=4.2.0",
+]
