@@ -1,0 +1,15 @@
+{
+  "dataset": "pusht",
+  "fps": 10,
+  "episodes": 206,
+  "frames": 25650,
+  "action_size": 2,
+  "state_size": 2,
+  "cameras": "observation.image",
+  "video_codec": "av1",
+  "timing_mismatches": 0,
+  "video_window_mismatches": 0,
+  "idle_episodes": 0,
+  "dead_joints": 0,
+  "success_episodes": 0
+}
