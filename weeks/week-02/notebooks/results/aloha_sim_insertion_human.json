@@ -1,0 +1,15 @@
+{
+  "dataset": "aloha_sim_insertion_human",
+  "fps": 50,
+  "episodes": 50,
+  "frames": 25000,
+  "action_size": 14,
+  "state_size": 14,
+  "cameras": "observation.images.top",
+  "video_codec": "av1",
+  "timing_mismatches": 0,
+  "video_window_mismatches": 0,
+  "idle_episodes": 0,
+  "dead_joints": 0,
+  "success_episodes": null
+}
