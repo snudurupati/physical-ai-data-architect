@@ -30,8 +30,8 @@ You should see `206 25650` for PushT and `50 25000` for aloha.
 
 Two notebooks, both in `notebooks/`:
 
-- `profiler.ipynb`: the demo from the video. Runs top to bottom with a config cell per dataset, so there is nothing to edit.
-- `02_profiler.ipynb`: the reusable profiler. This is the one to use on other datasets in later weeks. Change `REPO_ID` in the config cell.
+- `02_demo_profiler.ipynb`: the demo from the video. Runs top to bottom with a config cell per dataset, so there is nothing to edit.
+- `01_profiler.ipynb`: the reusable profiler. This is the one to use on other datasets in later weeks. Change `REPO_ID` in the config cell.
 
 Open one in VS Code, pick the `.venv` kernel, and run top to bottom.
 
