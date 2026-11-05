@@ -1,0 +1,15 @@
+{
+  "dataset": "record-pick-and-place-so101",
+  "fps": 30,
+  "episodes": 188,
+  "frames": 88161,
+  "action_size": 6,
+  "state_size": 6,
+  "cameras": "observation.images.right, observation.images.top",
+  "video_codec": null,
+  "timing_mismatches": 0,
+  "video_window_mismatches": 0,
+  "idle_episodes": 5,
+  "dead_joints": 0,
+  "success_episodes": null
+}
