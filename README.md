@@ -39,7 +39,7 @@ No custom hardware. Everything is off the shelf, on purpose.
 
 ## Status
 
-Day 1. Nothing built yet. The plan runs from October to December 2026, and every week ships code here plus a video and a blog post about what worked and what didn't.
+Weeks 1 to 3 are done (as of November 12, 2026). Week 1 explained what a LeRobot dataset is. Week 2 built the nine-check PySpark profiler and found that community datasets carry empty success labels. Week 3 generated its own dataset: 1,050 PushT episodes on a laptop, 36 of them success-labeled by the physics engine. Week 4 starts Open X-Embodiment and DROID ingestion.
 
 | Weeks | Focus |
 |---|---|
@@ -51,7 +51,9 @@ Day 1. Nothing built yet. The plan runs from October to December 2026, and every
 
 Each week has its own folder under [weeks/](weeks/), with a setup prompt and the code from that week's video.
 
-- [Week 1: Modern Robotics is a Data Engineering Problem](weeks/week-01/)
+- [Week 1: Modern Robotics is a Data Engineering Problem](weeks/week-01/) — [video](https://youtu.be/l39jyk14hJA)
+- [Week 2: Rediscovering the Joy of Data Engineering with Robotics](weeks/week-02/) — [video](https://youtu.be/VwRug6vfmGI)
+- [Week 3: I Generated 1,000 Robot Episodes Because I Could Not Write a Policy](weeks/week-03/)
 
 ## What this is not
 
