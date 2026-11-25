@@ -16,4 +16,6 @@ dev = [
     "ipykernel>=7.4.0",
     "matplotlib>=3.11.2",
     "pyspark>=4.2.0",
+    "tensorflow>=2.21.0",
+    "tensorflow-datasets>=4.9.10",
 ]
