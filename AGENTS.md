@@ -29,8 +29,22 @@ A 13-week public build (Oct–Dec 2026) of a robot-learning **data engine**: ing
 - Use the exact term from the tool or API. Define a term the first time it appears in a message.
 - Imperative for instructions: "Run this.", "Print the shape."
 - Numbers and units plain and explicit.
+- No em dashes in public-facing artifacts: notebooks, week READMEs, blogs, LinkedIn posts. Replace each with a period, a colon, or a comma.
 - This rule overrides any instinct to sound natural or engaging. It applies to every session.
 - Be brief. Answer in the fewest sentences that stay correct. No restating the question, no summary paragraphs of what was just said, no tables unless comparison is the content.
+
+### Sentence gate (check every draft before sending)
+
+1. Maximum 15 words per sentence.
+2. One sentence = one actor + one verb + one object. Name the actor.
+3. Zero relative clauses ("which", "that", "who"). Split the sentence instead.
+4. Zero trailing participles (", making it...", ", so that..."). Start a new sentence with "This...".
+5. No noun stacks (3+ nouns in a row). Insert a verb: "the loader reads the metadata".
+6. Every "this/it/that" carries a noun: "this cell", "that file". Never a bare "this".
+7. Define the term before first use. Then use only the API name.
+8. If a sentence needs a comma and a conjunction, split it into two sentences.
+
+The author corrects violations with the rule number, for example "rule 3". The agent rewrites that sentence immediately.
 
 ## Working with the author
 
