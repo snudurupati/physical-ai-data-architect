@@ -6,6 +6,21 @@ Working notes for AI coding agents in this repo. Single source of truth for agen
 
 A 13-week public build (Oct–Dec 2026) of a robot-learning **data engine**: ingest, profile, curate, and prove that curating data improves policy training. Read `README.md` for the thesis. The author is a senior data engineer new to robotics, learning in public.
 
+## Where things live
+
+Start from these paths. Do not search the disk for them.
+
+- Repo root: `/Users/snudurupati/Projects/physical-ai-data-architect`.
+- Public story and week status: [README.md](README.md).
+- Vault folder: `/Users/snudurupati/Vaults/Buddhi/Projects/Mara-Manishi/`.
+- Living record: [Status.md](/Users/snudurupati/Vaults/Buddhi/Projects/Mara-Manishi/Status.md). Newest entry on top. This file wins on any conflict.
+- Static plan: [Plan.md](/Users/snudurupati/Vaults/Buddhi/Projects/Mara-Manishi/Plan.md). Written once in October. Status.md is usually ahead of it.
+- How the author wants to be worked with: [Project-Instructions.md](/Users/snudurupati/Vaults/Buddhi/Projects/Mara-Manishi/Project-Instructions.md).
+- Per-week video script, blog and LinkedIn drafts: `WeekN/` folders in that vault folder.
+- What the plan says each week must ship: Plan.md, section `Week N`.
+- Measured dataset facts: `weeks/week-*/notebooks/results/<dataset>.json` and `weeks/week-*/results/<dataset>.json`.
+- Cached datasets on disk: `~/.cache/huggingface/lerobot/<org>/<dataset>/`.
+
 ## Environment
 
 - Python 3.11 via `uv`. Setup is `uv sync`; run everything with `uv run ...`.
@@ -45,6 +60,75 @@ A 13-week public build (Oct–Dec 2026) of a robot-learning **data engine**: ing
 8. If a sentence needs a comma and a conjunction, split it into two sentences.
 
 The author corrects violations with the rule number, for example "rule 3". The agent rewrites that sentence immediately.
+
+## Starting a week: the phrase "start week-NN"
+
+That phrase means one thing: coach the author through that week. It never means: build the week.
+No further setup instructions are needed from the author. Run the boot sequence below on your own.
+
+Boot sequence, in this order, before any other action:
+
+1. Read [README.md](README.md): status through the last finished week.
+2. Read [Status.md](/Users/snudurupati/Vaults/Buddhi/Projects/Mara-Manishi/Status.md), newest entry first.
+3. Read the `Week N` section of [Plan.md](/Users/snudurupati/Vaults/Buddhi/Projects/Mara-Manishi/Plan.md). Status.md wins where the two disagree.
+4. Read the previous week's `weeks/week-NN/README.md`: what actually shipped and what it found.
+5. List the profiler JSON under `weeks/week-*/notebooks/results/` and `weeks/week-*/results/`. Read each file before claiming anything about a dataset.
+6. Read `git log --oneline -15` and `git tag`. Confirm the expected `week-NN` tag exists.
+7. Check the working tree with `git status --short`. Report any change to a tagged week's files. Do not revert it on your own.
+
+Then reply with the week briefing. The briefing is the whole reply. Nothing else.
+
+### The week briefing
+
+The test: a reader who has not opened this repo in three weeks can act on it. The author is a
+senior data engineer with no robotics background. Judge every sentence against that reader.
+
+Required order:
+
+1. **What this week is.** Two or three plain sentences. Name the thing the author writes, and
+   say what a person does with the result. Use no term that needs prior repo context.
+2. **Why the arc needs it.** Name the later week that consumes this week's output. Say what
+   that week cannot do without it. One short paragraph.
+3. **What you hold at the end.** Every deliverable with its full path, and one sentence on
+   what the file contains.
+4. **The pass test.** The exact check that says this week worked. Give the numbers to compare,
+   the file or column each number comes from, and the number the author must beat.
+5. **The steps.** State the count. Number them. Every step names: the file or notebook it
+   happens in, what the author types or runs, the output they should see, and how they tell
+   the output is right. A step the author cannot start is not a step. Keep to six.
+6. **One question.** One. It must make the author reason, not guess a tool name.
+
+Rules for briefing text:
+
+- Define a term in the same sentence or the next one, before you use it a second time.
+- Do not use repo shorthand as a noun. Forbidden until defined in the same message: "the bar",
+  "labels", "labeled", "ground truth", "golden set", "check A" to "check I" (say what the
+  check measures), "the profiler" (name the file), "the engine", "package", "fork",
+  "canonical", "harness", "drift", "tautology", "validate", "score" (give its range and unit),
+  "the two", "both".
+- No bare "this", "these", "that", "it", "both". Every one carries a noun.
+- A step must not use a term the briefing has not defined, and must not name a file the
+  briefing has not shown.
+- Never compress an explanation into a phrase. Write the cause and the effect as two sentences.
+  Say who or what computes each value, and where the value comes from.
+- Explain a missing or impossible metric in plain cause and effect. Do not just report it.
+- Never put `...` or "etc." in an instruction. Show the full line.
+
+Failure signals: the author asks what the week is, says they are confused, or cannot name the
+first step. On any of these, the briefing failed. Rewrite it from scratch. Do not add detail to
+the broken one, and do not defend it.
+
+A goal created for a week must be a coaching goal. Name the split inside the objective: the
+agent teaches, reviews, and unsticks; the author writes the code and runs the notebooks. An
+objective that assigns this week's deliverable code to the agent is wrong. Rewrite it before
+saving it.
+
+The agent may write these files, on request, at week close: `weeks/week-NN/README.md`, the
+status section of the repo [README.md](README.md), and
+[Status.md](/Users/snudurupati/Vaults/Buddhi/Projects/Mara-Manishi/Status.md).
+
+The agent does not write: exercise code, notebook cells, package modules, or metric
+implementations. The author asks for each such file by name when they want one.
 
 ## Working with the author
 
